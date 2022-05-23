@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=Header.css.map */
+header {
+  height: 130px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 0, 109, 0.5)), to(rgba(27, 0, 105, 0.5)));
+  background: linear-gradient(180deg, rgba(15, 0, 109, 0.5) 0%, rgba(27, 0, 105, 0.5) 100%);
+  background-blend-mode: darken;
+  -webkit-box-shadow: 0px 5px 53px -2px #13004a;
+          box-shadow: 0px 5px 53px -2px #13004a;
+}
+/*# sourceMappingURL=Header.css.map */
