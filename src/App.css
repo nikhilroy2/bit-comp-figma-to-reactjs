@@ -19,5 +19,37 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background: #09003f;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.section_wrapper {
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.family_barlow {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.family_inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font_36 {
+  font-size: 3.6rem;
+}
+
+.btn_frame {
+  background: url("./Static/img/btn_frame.png") center/100% 100% no-repeat;
+  padding: 6px 25px;
+  font-weight: 600;
+  display: inline-block;
 }
 /*# sourceMappingURL=App.css.map */
