@@ -1,0 +1,17 @@
+fonts name:
+
+1. 
+Inter
+Weight
+600
+700
+
+2. 
+
+Barlow Condensed
+Weight
+600,
+300,
+800
+Style
+italic
