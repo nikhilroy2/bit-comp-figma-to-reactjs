@@ -1,0 +1,30 @@
+footer {
+  margin-top: 550px;
+  .text_strong {
+    font-size: 2.3rem;
+    font-weight: 700 !important;
+    color: #08003d;
+  }
+  .footer_title {
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #08003d;
+    margin-bottom: 2rem;
+    font-style: normal;
+    font-family: "Barlow Condensed";
+  }
+  .list_action {
+    font-size: 2.3rem;
+    color: #08003d;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .social_action_list {
+    a:not(:last-child) {
+      margin-right: 2.4rem;
+    }
+  }
+  .btn_action{
+      margin-top: 6.3rem;
+  }
+}

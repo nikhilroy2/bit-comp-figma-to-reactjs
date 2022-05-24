@@ -102,6 +102,36 @@
 #Homepage #TokenomicsSection .section_list_box {
   height: 813px;
   background: url("../../Static/img/token_frame.png") center/100% 100% no-repeat;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Homepage #TokenomicsSection .section_list_box .token_list {
+  position: relative;
+  z-index: 10;
+}
+
+#Homepage #TokenomicsSection .section_list_box .token_list .token_circle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+#Homepage #TokenomicsSection .section_list_box .token_list .token_circle .token_name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .section_img_outside {
@@ -113,6 +143,7 @@
      object-fit: contain;
   -o-object-position: right center;
      object-position: right center;
+  pointer-events: none;
 }
 
 .section_img_outside.img_launchpad {

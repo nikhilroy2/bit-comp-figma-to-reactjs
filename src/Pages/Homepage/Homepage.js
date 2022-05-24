@@ -7,6 +7,7 @@ import LaunchpadSection from "./partial/LaunchpadSection/LaunchpadSection";
 import NFTS from "./partial/NFTS/NFTS";
 import HowToEarn from "./partial/HowToEarn/HowToEarn";
 import TokenomicsSection from "./partial/TokenomicsSection/TokenomicsSection";
+import Roadmap from "./partial/Roadmap/Roadmap";
 function Homepage(props) {
   return (
     <div id="Homepage">
@@ -18,6 +19,7 @@ function Homepage(props) {
       <NFTS></NFTS>
       <HowToEarn></HowToEarn>
       <TokenomicsSection></TokenomicsSection>
+      <Roadmap></Roadmap>
     </div>
   );
 }

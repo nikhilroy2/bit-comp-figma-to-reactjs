@@ -1,1 +1,34 @@
-/* No CSS *//*# sourceMappingURL=Footer.css.map */
+footer {
+  margin-top: 550px;
+}
+
+footer .text_strong {
+  font-size: 2.3rem;
+  font-weight: 700 !important;
+  color: #08003d;
+}
+
+footer .footer_title {
+  font-weight: 700;
+  font-size: 2.7rem;
+  color: #08003d;
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-family: "Barlow Condensed";
+}
+
+footer .list_action {
+  font-size: 2.3rem;
+  color: #08003d;
+  font-style: italic;
+  font-weight: 500;
+}
+
+footer .social_action_list a:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+footer .btn_action {
+  margin-top: 6.3rem;
+}
+/*# sourceMappingURL=Footer.css.map */
