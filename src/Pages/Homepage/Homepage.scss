@@ -1,23 +1,73 @@
-#Homepage{
-  #Section1{
+#Homepage {
+  #Section1 {
     min-height: 1224px;
-    background: url('../../Static/img/ArtWeb1.png') center/contain no-repeat;
+    background: url("../../Static/img/ArtWeb1.png") center/contain no-repeat;
   }
 
   // AboutSection
 
-  #AboutSection{
+  #AboutSection {
     position: relative;
-    .about_game_desc{
+    .about_game_desc {
       margin-top: 20rem;
     }
-    .about_game_img{
+    .about_game_img {
       position: absolute;
       right: 0;
       bottom: 0;
       height: 50rem;
       object-fit: contain;
       object-position: right center;
+    }
+  }
+  #GameplaySection {
+    .section_content {
+      margin-top: 10rem;
+    }
+
+    // prev button
+    .swiper-button-prev {
+      left: calc(100% - 430px);
+      top: 90%;
+      width: 65px;
+      height: 82px;
+    }
+    .swiper-button-prev:after {
+      content: "";
+      background: url("../../Static/img/arow_light.png");
+      width: 100%;
+      height: 100%;
+    }
+
+    // next button
+    .swiper-button-next {
+      left: calc(100% - 100px);
+      top: 90%;
+      width: 65px;
+      height: 82px;
+    }
+    .swiper-button-next:after {
+      content: "";
+      background: url("../../Static/img/arow_right.png");
+      width: 100%;
+      height: 100%;
+    }
+
+    // swiper-pagination-bullets
+    .swiper-pagination-bullets {
+      display: flex;
+      width: 220px;
+      left: calc(100% - 335px);
+      background: #0f006d;
+      bottom: 53px!important;
+      .swiper-pagination-bullet {
+        flex-grow: 1;
+        border-radius: 0px;
+        height: 3px;
+        &.swiper-pagination-bullet-active {
+          background: #03b4e8;
+        }
+      }
     }
   }
 }
