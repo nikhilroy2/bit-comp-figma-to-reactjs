@@ -1,5 +1,5 @@
 #Homepage #Section1 {
   min-height: 1224px;
-  background: url("../../Static/img/ArtWeb1.png") center/cover no-repeat;
+  background: url("../../Static/img/ArtWeb1.png") center/contain no-repeat;
 }
 /*# sourceMappingURL=Homepage.css.map */

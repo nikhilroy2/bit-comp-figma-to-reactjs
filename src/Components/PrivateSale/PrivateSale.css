@@ -1,0 +1,94 @@
+#PrivateSale {
+  width: 68.5rem;
+  height: 68.5rem;
+  border-radius: 100%;
+  background: #000;
+  margin-top: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../../Static/img/circle.png") center/contain no-repeat;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  padding: 10rem;
+}
+
+#PrivateSale h2 {
+  font-size: 5.3rem;
+  color: #4bc9ef;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#PrivateSale .private_sale_counter {
+  color: #fff;
+}
+
+#PrivateSale .private_sale_counter .counter_item {
+  position: relative;
+}
+
+#PrivateSale .private_sale_counter .time {
+  font-size: 3.9rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+#PrivateSale .private_sale_counter .time_name {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#PrivateSale .counter_input_wrapper {
+  background: rgba(34, 49, 101, 0.69);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+#PrivateSale .counter_input_wrapper * {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+#PrivateSale .counter_input_wrapper input {
+  background: transparent;
+  width: 100%;
+  padding: 0.7rem 2.5rem;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+
+#PrivateSale .counter_input_wrapper button {
+  color: #03b4e8;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+#PrivateSale .helper * {
+  font-family: "Inter", sans-serif;
+}
+
+#PrivateSale .helper small {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+#PrivateSale .helper .btn_frame {
+  font-size: 2.1rem;
+  padding: 2.5rem 3rem;
+  color: #20007A;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=PrivateSale.css.map */
