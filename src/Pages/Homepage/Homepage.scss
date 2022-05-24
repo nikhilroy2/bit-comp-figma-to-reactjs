@@ -3,4 +3,21 @@
     min-height: 1224px;
     background: url('../../Static/img/ArtWeb1.png') center/contain no-repeat;
   }
+
+  // AboutSection
+
+  #AboutSection{
+    position: relative;
+    .about_game_desc{
+      margin-top: 20rem;
+    }
+    .about_game_img{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 50rem;
+      object-fit: contain;
+      object-position: right center;
+    }
+  }
 }
