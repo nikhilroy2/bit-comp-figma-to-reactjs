@@ -102,7 +102,7 @@ export const AboutSection = () => {
                             </div>
                         </div>
                         <img
-                            className="about_game_img"
+                            className="section_img_outside"
                             src={require("../../../../Static/img/pngwing.png")}
                             alt="img"
                         />

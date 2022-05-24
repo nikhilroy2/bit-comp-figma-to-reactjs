@@ -3,13 +3,21 @@ import "./Homepage.css";
 import PrivateSale from "../../Components/PrivateSale/PrivateSale";
 import { AboutSection } from "./partial/AboutSection/AboutSection";
 import GameplaySection from "./partial/GameplaySection/GameplaySection";
+import LaunchpadSection from "./partial/LaunchpadSection/LaunchpadSection";
+import NFTS from "./partial/NFTS/NFTS";
+import HowToEarn from "./partial/HowToEarn/HowToEarn";
+import TokenomicsSection from "./partial/TokenomicsSection/TokenomicsSection";
 function Homepage(props) {
   return (
     <div id="Homepage">
       <Section1></Section1>
 
       <AboutSection></AboutSection>
-      <GameplaySection></GameplaySection>
+      <GameplaySection></GameplaySection>1
+      <LaunchpadSection></LaunchpadSection>
+      <NFTS></NFTS>
+      <HowToEarn></HowToEarn>
+      <TokenomicsSection></TokenomicsSection>
     </div>
   );
 }
