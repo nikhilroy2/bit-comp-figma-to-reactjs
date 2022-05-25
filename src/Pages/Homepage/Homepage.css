@@ -26,6 +26,7 @@
 @media (max-width: 991px) {
   #Homepage #AboutSection .about_game_desc {
     margin-top: 35rem;
+    height: 38rem;
   }
 }
 
@@ -42,6 +43,8 @@
 @media (max-width: 991px) {
   #Homepage #GameplaySection .slide_img {
     margin-top: -5rem;
+    height: 558px;
+    width: auto !important;
   }
 }
 
@@ -70,7 +73,7 @@
     width: 38px;
     height: 48px;
     left: calc(50% - 150px);
-    top: 98%;
+    top: 93%;
   }
 }
 
@@ -93,7 +96,7 @@
     width: 38px;
     height: 48px;
     left: calc(50% + 80px);
-    top: 98%;
+    top: 93%;
   }
 }
 
@@ -137,9 +140,52 @@
   position: relative;
 }
 
+#Homepage #nfts .section_title {
+  margin-top: -100px !important;
+}
+
+@media (max-width: 1300px) {
+  #Homepage #nfts .section_title {
+    margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  #Homepage #nfts .section_title {
+    margin-top: -304px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #Homepage #nfts .section_title {
+    margin-top: -100px !important;
+  }
+}
+
 #Homepage #nfts .nfts_img {
   position: absolute;
-  top: 20%;
+  top: 1%;
+}
+
+@media (max-width: 1300px) {
+  #Homepage #nfts .nfts_img {
+    top: 53%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  #Homepage #nfts .nfts_img {
+    top: 0%;
+  }
+}
+
+@media (max-width: 991px) {
+  #Homepage #nfts .nfts_img {
+    top: 78%;
+  }
 }
 
 #Homepage #HowToEarn {
@@ -226,6 +272,13 @@
 .section_img_outside.img_launchpad {
   height: 80rem;
   bottom: -60%;
+}
+
+@media (max-width: 992px) {
+  .section_img_outside.img_launchpad {
+    height: 40rem;
+    right: 0%;
+  }
 }
 
 .section_img_outside.token_img {

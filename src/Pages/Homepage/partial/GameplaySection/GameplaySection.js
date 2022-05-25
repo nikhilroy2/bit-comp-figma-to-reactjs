@@ -25,9 +25,11 @@ function GameplaySection(props) {
                     <Swiper pagination={true} navigation={true} modules={[Navigation, Pagination]} className="mySwiper">
 
 
+                       
+
                         <SwiperSlide>
                             <div className="row">
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 text-center">
                                     <img className='w-100 slide_img' src={require('../../../../Static/img/boss_mode.png')} alt="img" />
                                 </div>
                                 <div className="col-lg-6  section_content text-center text-lg-start px-5 px-lg-2">
@@ -52,11 +54,9 @@ function GameplaySection(props) {
                                 </div>
                             </div>
                         </SwiperSlide>
-
-
                         <SwiperSlide>
                             <div className="row">
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 text-center">
                                     <img className='w-100 slide_img' src={require('../../../../Static/img/boss_mode.png')} alt="img" />
                                 </div>
                                 <div className="col-lg-6  section_content text-center text-lg-start px-5 px-lg-2">
@@ -81,13 +81,12 @@ function GameplaySection(props) {
                                 </div>
                             </div>
                         </SwiperSlide>
-
                         <SwiperSlide>
                             <div className="row">
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 text-center">
                                     <img className='w-100 slide_img' src={require('../../../../Static/img/boss_mode.png')} alt="img" />
                                 </div>
-                                <div className="col-lg-6  section_content text-center text-lg-start px-5 px-lg-2">
+                                <div className="col-lg-6 mb-5  section_content text-center text-lg-start px-5 px-lg-2">
                                     <h4 className='text_69'>
                                         Boss mode
                                     </h4>
