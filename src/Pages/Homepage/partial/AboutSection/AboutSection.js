@@ -2,15 +2,15 @@ export const AboutSection = () => {
     return (
         <div id="AboutSection" className="mt-5">
             <div className="section_wrapper mb-5">
-                <div className="section_title mb-5 pb-5">
+                <div className="section_title mb-4 mb-lg-5 pb-2 pb-lg-5">
                     <h2 className="text-center">ABOUT</h2>
                 </div>
                 <div className="section_body">
                     <div className="row g-3 g-md-5">
-                        <div className="col-md-6">
+                        <div className="col-lg-6">
                             <div className="col_wrapper">
-                                <div className="row">
-                                    <div className="col-md-10">
+                                <div className="row justify-content-center justify-content-lg-stretch">
+                                    <div className="col-md-10 text-center text-lg-start">
                                         <h4 className="mb-3 mb-md-5">BCOMP Token</h4>
 
                                         <p className="section_pera text-white">
@@ -40,12 +40,11 @@ export const AboutSection = () => {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="col-md-6">
+                        <div className="col-lg-6">
                             <div className="col_wrapper">
-                                <div className="row">
-                                    <div className="col-md-10">
-                                        <h4 className="mb-3 mb-md-5 text_5d">
+                                <div className="row justify-content-center justify-content-lg-stretch">
+                                    <div className="col-md-10 text-center text-lg-start">
+                                        <h4 className="mb-3 mb-md-5 text_5d ">
                                             Project description
                                         </h4>
 

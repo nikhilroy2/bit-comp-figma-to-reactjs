@@ -59,8 +59,6 @@ function PrivateSale(props) {
 
       <div className="helper">
         <small className="d-block p-2">1 BUSD = 500 $ROYALE</small>
-
-        <br />
         <button className="btn_frame">Buy with BUSD</button>
       </div>
     </div>

@@ -64,7 +64,7 @@ button {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 600px) {
   .section_wrapper {
     padding: 0px 1rem;
   }
@@ -112,23 +112,41 @@ button {
 }
 
 .btn_frame.section_frame_btn {
-  font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #0f006d;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 992px) {
+  .btn_frame.section_frame_btn {
+    font-size: 3.5rem;
+  }
 }
 
 h1 {
-  font-size: 11.2rem;
+  font-size: 6.1rem;
   font-family: "Barlow Condensed", sans-serif;
   color: #fff;
   font-weight: 800;
 }
 
+@media (min-width: 992px) {
+  h1 {
+    font-size: 11.2rem;
+  }
+}
+
 h2 {
   font-weight: 800;
-  font-size: 8.7rem;
   color: #fff;
+  font-size: 6.1rem;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 8.7rem;
+  }
 }
 
 h3 {
@@ -137,10 +155,16 @@ h3 {
 }
 
 h4 {
-  font-size: 3.2rem;
+  font-size: 2.1rem;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
   color: #fff;
+}
+
+@media (min-width: 992px) {
+  h4 {
+    font-size: 3.2rem;
+  }
 }
 
 h5 {

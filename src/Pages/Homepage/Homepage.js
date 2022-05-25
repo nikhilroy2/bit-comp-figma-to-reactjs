@@ -32,7 +32,7 @@ const Section1 = () => {
   return (
     <div id="Section1">
       <div className="section_wrapper">
-        <div className="row">
+        <div className="row justify-content-center justify-content-lg-stretch">
           <div className="col-12 d-lg-none">
             <div className="nav_sale_content">
               <div className="text-center">
@@ -43,25 +43,25 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-7">
+          <div className="col-lg-12">
 
 
-            <h1 className="mb-3 mb-md-5">BIT COMP</h1>
-            <h4 className="mb-3 mb-md-5">
+            <h1 className="mb-3 mb-md-5 text-center text-lg-start">BIT COMP</h1>
+            <h4 className="mb-3 mb-md-5 text-center text-lg-start">
               BitComp unites investors, players and developers based on
               blockchain technologies. <br />
               <br />
               You can play with your friends, invest in new projects and even
               create your own token and find investors for it.
             </h4>
-            <div className="d-flex flex-wrap align-items-center justify-content-center  ">
-              <a href="#" className="me-3 me-md-5">
+            <div className="d-flex mt-5 flex-column flex-lg-row flex-wrap align-items-center justify-content-center  ">
+              <a href="#" className=" mb-5 me-lg-5 order-2 order-lg-1">
                 <img
                   src={require("../../Static/img/google_play.png")}
                   alt="img"
                 />
               </a>
-              <a href="#">
+              <a href="#" className="mb-5 order-1 order-lg-2">
                 <img
                   src={require("../../Static/img/app_store.png")}
                   alt="img"

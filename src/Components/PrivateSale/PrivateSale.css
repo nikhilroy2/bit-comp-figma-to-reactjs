@@ -1,23 +1,50 @@
 #PrivateSale {
-  width: 68.5rem;
-  height: 68.5rem;
   border-radius: 100%;
   background: #000;
-  margin-top: 24rem;
   margin-left: auto;
   margin-right: auto;
   background: url("../../Static/img/circle.png") center/contain no-repeat;
   z-index: 2;
   position: relative;
   text-align: center;
-  padding: 10rem;
+  padding: 3rem 7rem;
+  width: 345px;
+  height: 345px;
+  margin-top: 15rem;
+}
+
+@media (max-width: 360px) {
+  #PrivateSale {
+    zoom: 0.8;
+  }
+}
+
+@media (min-width: 992px) {
+  #PrivateSale {
+    width: 68.5rem;
+    height: 68.5rem;
+    padding: 10rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #PrivateSale {
+    margin-top: 24rem;
+  }
 }
 
 #PrivateSale h2 {
-  font-size: 5.3rem;
+  font-size: 2.5rem;
   color: #4bc9ef;
   font-weight: 700;
   text-transform: uppercase;
+  font-style: italic;
+}
+
+@media (min-width: 992px) {
+  #PrivateSale h2 {
+    font-size: 5.3rem;
+  }
 }
 
 #PrivateSale .private_sale_counter {
@@ -29,19 +56,31 @@
 }
 
 #PrivateSale .private_sale_counter .time {
-  font-size: 3.9rem;
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  font-size: 2.7rem;
+}
+
+@media (min-width: 992px) {
+  #PrivateSale .private_sale_counter .time {
+    font-size: 3.9rem;
+  }
 }
 
 #PrivateSale .private_sale_counter .time_name {
   position: absolute;
-  font-size: 1.1rem;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  font-size: 1.1rem;
+}
+
+@media (min-width: 992px) {
+  #PrivateSale .private_sale_counter .time_name {
+    font-size: 0.9rem;
+  }
 }
 
 #PrivateSale .counter_input_wrapper {
@@ -54,6 +93,15 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 4rem;
+}
+
+@media (max-width: 991px) {
+  #PrivateSale .counter_input_wrapper {
+    width: 100% !important;
+  }
+  #PrivateSale .counter_input_wrapper * {
+    font-size: 1.4rem !important;
+  }
 }
 
 #PrivateSale .counter_input_wrapper * {
@@ -85,10 +133,26 @@
   font-size: 1.4rem;
 }
 
+@media (max-width: 991px) {
+  #PrivateSale .helper small {
+    font-size: 0.9rem;
+  }
+}
+
 #PrivateSale .helper .btn_frame {
   font-size: 2.1rem;
   padding: 2.5rem 3rem;
-  color: #20007A;
+  color: #20007a;
   text-transform: uppercase;
+  font-style: italic;
+  margin-top: 3rem;
+}
+
+@media (max-width: 991px) {
+  #PrivateSale .helper .btn_frame {
+    font-size: 1.8rem;
+    padding: 0.8rem 0.5rem;
+    margin-top: 1rem;
+  }
 }
 /*# sourceMappingURL=PrivateSale.css.map */

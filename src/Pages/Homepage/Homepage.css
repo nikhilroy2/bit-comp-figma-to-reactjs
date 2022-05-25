@@ -1,6 +1,12 @@
 #Homepage #Section1 {
   min-height: 1224px;
-  background: url("../../Static/img/ArtWeb1.png") center 0px/contain no-repeat;
+  background: url("../../Static/img/ArtWeb1.png") 40% 0px/cover no-repeat;
+}
+
+@media (min-width: 992px) {
+  #Homepage #Section1 {
+    background: url("../../Static/img/ArtWeb1.png") center 0px/contain no-repeat;
+  }
 }
 
 #Homepage #AboutSection {
