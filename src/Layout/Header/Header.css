@@ -155,8 +155,8 @@ header .nav_action_link_wrapper a::after {
   bottom: 0;
   width: 100%;
   height: 2px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .nav_action_link_wrapper a:hover::after, header .nav_action_link_wrapper a.active_link::after {
@@ -166,10 +166,35 @@ header .nav_action_link_wrapper a:hover::after, header .nav_action_link_wrapper 
 header .user_token_wrapper {
   font-size: 1.4rem;
   color: #fff;
-  margin-right: 6.6rem;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  header .user_token_wrapper {
+    margin-right: 6.6rem;
+  }
+}
+
+header .mobile_nft_menu {
+  height: 71px;
+  background: #3b46a4;
+  -webkit-box-shadow: 0px 20px 53px -2px #13004a;
+          box-shadow: 0px 20px 53px -2px #13004a;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .nav_sale_content * {

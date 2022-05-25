@@ -88,8 +88,8 @@ function Header(props) {
               </a>
             </div>
 
-            <div className="nav_item nav_action_link_wrapper">
-            
+            <div className="nav_item nav_action_link_wrapper d-none d-lg-block">
+
               <Link to="/buy_nft_investory" className={`font_36 text_5d text-uppercase me-5 ${nftPathName === '/buy_nft_investory' ? 'active_link' : ''}`} style={{ fontWeight: '700' }}>
                 BUY hero
               </Link>
@@ -103,13 +103,37 @@ function Header(props) {
                 <img src={require('../../Static/img/bcomp.png')} alt="img" />
                 1 BCOMP <br /> 0xAc...807h
               </div>
-              <button className="btn_frame family_barlow font_36 text_6d">
+              <button className="btn_frame family_barlow font_36 text_6d d-none d-lg-block">
                 BUY TOKEN
               </button>
             </div>
           </nav>
         </div>
       }
+
+      {/* Mobile Menu */}
+      <div className="mobile_nft_menu d-lg-none">
+        <div className="section_wrapper ms-0 w-100">
+          <div className="nav_item nav_action_link_wrapper d-flex justify-content-between align-items-center w-100">
+
+            <div className="action_wrapper">
+              <Link to="/nft_investory" className={`font_36 text_5d text-uppercase ${nftPathName === '/nft_investory' ? 'active_link' : ''}`} style={{ fontWeight: '700' }}>
+                inventory
+              </Link>
+
+              <Link to="/buy_nft_investory" className={`font_36 text_5d text-uppercase me-5 ${nftPathName === '/buy_nft_investory' ? 'active_link' : ''}`} style={{ fontWeight: '700' }}>
+                BUY hero
+              </Link>
+
+            </div>
+            <div className="action_wrapper">
+              <button className="btn_frame family_barlow font_36 text_6d d-block d-lg-none">
+                BUY TOKEN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       {toggleMemo ? <Menu></Menu> : ""}
     </header>
   );
