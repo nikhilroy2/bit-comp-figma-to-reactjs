@@ -6,7 +6,7 @@ function BuyNftInvestory(props) {
     return (
         <div id='BuyNftInvestory'>
             <Header></Header>
-
+            
             <menu>
                 <NftPreSale></NftPreSale>
             </menu>

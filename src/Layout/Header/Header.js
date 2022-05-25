@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { CountDownStart } from "../../Components/HeaderCountDown/HeaderCountDown";
+import { Link } from "react-router-dom";
 function Header(props) {
   // toggleBtn action
 
@@ -32,7 +33,7 @@ function Header(props) {
 
   return (
     <header className={isHeaderActive ? 'active_header' : ''}>
-      {!(nftPathName === '/buy_nft_investory') ?
+      {!(nftPathName === '/buy_nft_investory') && !(nftPathName === '/nft_investory') ?
         <div className="section_wrapper h-100">
           <nav className="d-flex align-items-center h-100 navbar shadow-0 justify-content-between">
             <div className="nav_item">
@@ -88,13 +89,13 @@ function Header(props) {
             </div>
 
             <div className="nav_item nav_action_link_wrapper">
-              <a className="font_36 text_5d text-uppercase me-5" style={{ fontWeight: '700' }} href="#">
+            
+              <Link to="/buy_nft_investory" className={`font_36 text_5d text-uppercase me-5 ${nftPathName === '/buy_nft_investory' ? 'active_link' : ''}`} style={{ fontWeight: '700' }}>
                 BUY hero
-              </a>
-
-              <a className="font_36 text_5d text-uppercase" href="#" style={{ fontWeight: '700' }}>
+              </Link>
+              <Link to="/nft_investory" className={`font_36 text_5d text-uppercase ${nftPathName === '/nft_investory' ? 'active_link' : ''}`} style={{ fontWeight: '700' }}>
                 inventory
-              </a>
+              </Link>
             </div>
 
             <div className="nav_item nav_action d-flex align-items-center">
