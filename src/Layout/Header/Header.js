@@ -88,6 +88,21 @@ function Header(props) {
               </a>
             </div>
 
+            {(nftPathName === '/nft_investory') && (
+              <div className="nav_item nav_action_link_wrapper_mobile">
+
+                <Link to="/buy_nft_investory" className={`font_36 text-white  me-2 `} style={{ fontWeight: '700', fontStyle: 'normal' }}>
+                  Hero
+                </Link>
+                <Link to="/nft_investory" className={`font_36 text-white  me-2`} style={{ fontWeight: '700', fontStyle: 'normal' }}>
+                  Trainers
+                </Link>
+                <Link to="/nft_investory" className={`font_36 text-white `} style={{ fontWeight: '700', fontStyle: 'normal' }}>
+                  Lands
+                </Link>
+              </div>
+            )}
+
             <div className="nav_item nav_action_link_wrapper d-none d-lg-block">
 
               <Link to="/buy_nft_investory" className={`font_36 text_5d text-uppercase me-5 ${nftPathName === '/buy_nft_investory' ? 'active_link' : ''}`} style={{ fontWeight: '700' }}>

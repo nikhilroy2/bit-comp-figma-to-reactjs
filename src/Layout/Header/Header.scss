@@ -132,13 +132,15 @@ header {
     }
   }
   .user_token_wrapper {
-    font-size: 1.4rem;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 1.1rem;
+
     @media (min-width: 992px) {
       margin-right: 6.6rem;
+      font-size: 1.4rem;
     }
   }
   .mobile_nft_menu {
@@ -152,6 +154,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: start;
+  }
+
+  .nav_action_link_wrapper_mobile {
+    a {
+      font-size: 1.8rem;
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+    }
   }
 }
 

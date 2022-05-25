@@ -45,25 +45,67 @@
     height: 100%;
     margin-left: 260px;
     margin-top: 130px;
+    @media (max-width: 1130px) {
+      width: calc(100% - 140px);
+      margin-left: 190px;
+    }
+    @media (max-width: 991px) {
+      width: calc(100% - 0px);
+      margin-left: 0px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
     .heroes_list_item {
       background: url("../../Static/img/heroes_bg.png") center/100% 100%
         no-repeat;
       height: 150px;
+      @media (max-width: 991px) {
+        height: 95px;
+      }
       .avatar {
         height: 120px;
+        @media (max-width: 1000px) {
+          height: 80px;
+        }
+        @media (max-width: 991px) {
+          height: 60px;
+        }
       }
       .user_heroes {
         margin-right: 15rem;
+        @media (max-width: 1300px) {
+          margin-right: 2rem;
+        }
       }
 
       .user_id {
         font-size: 3.2rem;
+        @media (max-width: 991px) {
+          font-size: 1.8rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
+        }
+      }
+      .heroes_img {
+        height: 20px;
       }
       .heroes_counter {
         font-size: 3.1rem;
       }
       .heroes_item {
         margin-right: 5rem;
+        @media (max-width: 1300px) {
+          margin-right: 2rem;
+        }
+        @media (max-width: 991px) {
+          margin-right: 0.7rem;
+        }
+      }
+      .heroes_item_img {
+        @media (max-width: 991px) {
+          height: 2.5rem !important;
+        }
       }
     }
   }

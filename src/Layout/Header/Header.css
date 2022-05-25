@@ -164,16 +164,17 @@ header .nav_action_link_wrapper a:hover::after, header .nav_action_link_wrapper 
 }
 
 header .user_token_wrapper {
-  font-size: 1.4rem;
   color: #fff;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 992px) {
   header .user_token_wrapper {
     margin-right: 6.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -195,6 +196,16 @@ header .mobile_nft_menu {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+}
+
+header .nav_action_link_wrapper_mobile a {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 767px) {
+  header .nav_action_link_wrapper_mobile a {
+    font-size: 1.4rem;
+  }
 }
 
 .nav_sale_content * {
