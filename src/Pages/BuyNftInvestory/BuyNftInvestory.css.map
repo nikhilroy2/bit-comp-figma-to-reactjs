@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,gBAAgB,CAAA;EACZ,UAAU,EAAE,wCAAwC;EACpD,UAAU,EAAE,KAAK;EACjB,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "BuyNftInvestory.scss"
+    ],
+    "names": [],
+    "file": "BuyNftInvestory.css"
+}
