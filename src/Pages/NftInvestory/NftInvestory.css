@@ -1,3 +1,10 @@
+#NftInvestory {
+  background: url("../../Static/img/investory_bg.png") center top/cover no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  border: 0;
+}
+
 #NftInvestory #nftAside {
   width: 260px;
   background: url("../../Static/img/aside_bg.png") center/100% 100% no-repeat;
@@ -34,5 +41,38 @@
 
 #NftInvestory #nftAside a:hover::after, #NftInvestory #nftAside a.active_action::after {
   background: #55dfff;
+}
+
+#NftInvestory #nft_menu {
+  width: calc(100% - 260px);
+  padding: 8rem;
+  height: 100%;
+  margin-left: 260px;
+  margin-top: 130px;
+}
+
+#NftInvestory #nft_menu .heroes_list_item {
+  background: url("../../Static/img/heroes_bg.png") center/100% 100% no-repeat;
+  height: 150px;
+}
+
+#NftInvestory #nft_menu .heroes_list_item .avatar {
+  height: 120px;
+}
+
+#NftInvestory #nft_menu .heroes_list_item .user_heroes {
+  margin-right: 15rem;
+}
+
+#NftInvestory #nft_menu .heroes_list_item .user_id {
+  font-size: 3.2rem;
+}
+
+#NftInvestory #nft_menu .heroes_list_item .heroes_counter {
+  font-size: 3.1rem;
+}
+
+#NftInvestory #nft_menu .heroes_list_item .heroes_item {
+  margin-right: 5rem;
 }
 /*# sourceMappingURL=NftInvestory.css.map */
