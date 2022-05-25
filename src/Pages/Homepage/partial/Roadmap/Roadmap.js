@@ -137,7 +137,7 @@ function Roadmap(props) {
                                             <ul className="text-white content_list px-5 mx-2">
                                                 {v.year_roadmap_list.map(j => {
                                                     return (
-                                                        <li className='mb-3'>
+                                                        <li className='mb-3' key={j.id}>
                                                             {j.name}
                                                         </li>
                                                     )

@@ -41,9 +41,26 @@ function Header(props) {
   // toggleBtn action
 
   const [toggleBtn, setToggleBtn] = useState(false);
+  const toggleMemo = React.useMemo(() => {
+    return toggleBtn
+  }, [toggleBtn])
+
+
+
+  // header activation
+  const [isHeaderActive, setIsHeaderActive] = useState(false);
+  window.onscroll = () => {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      //console.log(true)
+      setIsHeaderActive(true)
+    } else {
+      setIsHeaderActive(false)
+    }
+  }
+
 
   return (
-    <header>
+    <header className={isHeaderActive ? 'active_header' : ''}>
       <div className="section_wrapper">
         <nav className="d-flex align-items-center navbar justify-content-between">
           <div className="nav_item">
@@ -59,7 +76,7 @@ function Header(props) {
             <div className="text-center">
               <strong>Private Sale Start In</strong>
               <div className="sale_start_wrapper">
-                <Countdown date={Date.now() + 1036800000} renderer={renderer} />
+                <CountDownStart></CountDownStart>
               </div>
             </div>
           </div>
@@ -77,7 +94,7 @@ function Header(props) {
                 <img
                   style={{ width: "26px", height: "26px" }}
                   src={
-                    toggleBtn
+                    toggleMemo
                       ? require("../../Static/img/menu_close.png")
                       : require("../../Static/img/menu_bar.png")
                   }
@@ -88,29 +105,44 @@ function Header(props) {
           </div>
         </nav>
       </div>
-      {toggleBtn ? <Menu></Menu> : ""}
+      {toggleMemo ? <Menu></Menu> : ""}
     </header>
   );
 }
 
+
 export default Header;
 
+const CountDownStart = () => {
+
+  // first try useMemo but it's not working then try useEffect then it's worked.
+  const CountdownWrapper = () => <Countdown date={Date.now() + 1036800000} renderer={renderer} />
+  const MemoCountDown = React.memo(CountdownWrapper)
+  //console.log(MemoCountDown)
+  const [countReady, setCountReady] = useState('')
+  React.useEffect(() => {
+    setCountReady(<MemoCountDown></MemoCountDown>)
+  }, [])
+  return (
+    <>{countReady}</>
+  )
+}
 const Menu = () => {
   const menu_object = [
     {
       id: 1,
       name: "About us",
-      link: "#about_us",
+      link: "#AboutSection",
     },
     {
       id: 2,
       name: "Gameplay",
-      link: "#gameplay",
+      link: "#GameplaySection",
     },
     {
       id: 3,
       name: "Launchpad",
-      link: "#launchpad",
+      link: "#LaunchpadSection",
     },
     {
       id: 4,
@@ -120,17 +152,17 @@ const Menu = () => {
     {
       id: 5,
       name: "How to Earn?",
-      link: "#how_to_earn",
+      link: "#HowToEarn",
     },
     {
       id: 6,
       name: "Tokenomics",
-      link: "#tokenomics",
+      link: "#TokenomicsSection",
     },
     {
       id: 7,
-      name: "roadmap",
-      link: "#roadmap",
+      name: "Roadmap",
+      link: "#Roadmap",
     },
   ];
   const menu_social_object = [
@@ -201,6 +233,13 @@ const Menu = () => {
       link: "#",
     },
   ];
+
+  const [menuListActive, setMenuListActive] = useState();
+
+  const menuListActiveHandle = (actionIndex) => {
+    setMenuListActive(actionIndex)
+  }
+
   return (
     <menu id="header_menu" className="m-0 p-0 ">
       <div className="section_wrapper d-flex align-items-center justify-content-between w-100">
@@ -208,7 +247,7 @@ const Menu = () => {
           {menu_object.map((v) => {
             return (
               <li key={v.id}>
-                <a href={v.link}>{v.name}</a>
+                <a href={v.link} onClick={() => menuListActiveHandle(v.id)} className={menuListActive === v.id ? 'active_action' : ''}>{v.name}</a>
               </li>
             );
           })}

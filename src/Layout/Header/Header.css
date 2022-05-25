@@ -15,6 +15,14 @@ header {
   background-blend-mode: darken;
   -webkit-box-shadow: 0px 5px 53px -2px #13004a;
           box-shadow: 0px 5px 53px -2px #13004a;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header.active_header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f006d), to(#1b0069));
+  background: linear-gradient(180deg, #0f006d 0%, #1b0069 100%);
+  z-index: 200;
 }
 
 header .logo {
@@ -85,5 +93,14 @@ header #header_menu .menu_list a {
   margin-right: 4rem;
   color: #fff;
   font-family: "Inter", sans-serif;
+  display: inline-block;
+  padding: 5px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header #header_menu .menu_list a:hover, header #header_menu .menu_list a.active_action {
+  border-bottom: 3px solid #55dfff;
 }
 /*# sourceMappingURL=Header.css.map */
