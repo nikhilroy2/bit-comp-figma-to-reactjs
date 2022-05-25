@@ -89,7 +89,7 @@ function Header(props) {
             </div>
 
             {(nftPathName === '/nft_investory') && (
-              <div className="nav_item nav_action_link_wrapper_mobile">
+              <div className="nav_item nav_action_link_wrapper_mobile d-lg-none">
 
                 <Link to="/buy_nft_investory" className={`font_36 text-white  me-2 `} style={{ fontWeight: '700', fontStyle: 'normal' }}>
                   Hero
