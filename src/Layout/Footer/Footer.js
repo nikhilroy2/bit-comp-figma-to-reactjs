@@ -3,10 +3,9 @@ import './Footer.css';
 function Footer(props) {
     return (
         <footer>
-
             <div className="section_wrapper">
                 <div className="row">
-                    <div className="col-md-5">
+                    <div className="col-6 col-lg-5 order-1">
                         <a href="#">
                             <img src={require('../../Static/img/BitCompBlueBlack.png')} alt="img" className="logo" />
                         </a>
@@ -19,79 +18,103 @@ function Footer(props) {
                                 </div>
                             </li>
                         </ul>
+
+                        <p className="copyright_text d-none d-lg-block">
+                            © 2022 bit comp. All right reserved.
+                        </p>
                     </div>
-                    <div className="col-md-7">
-                        <div className="row">
-                            <div className="col-md-4">
-                                <h3 className="footer_title">
-                                    ABOUT US
-                                </h3>
+                    <div className="col-6 col-lg-2 order-3 order-lg-2">
+                        <h3 className="footer_title">
+                            ABOUT US
+                        </h3>
 
-                                <ul className="list-unstyled">
-                                    <li>
-                                        <a className='list_action' href="#">
-                                            Bit Comp Whitepaper
-                                        </a>
-                                    </li>
+                        <ul className="list-unstyled">
+                            <li>
+                                <a className='list_action' href="#">
+                                    Bit Comp Whitepaper
+                                </a>
+                            </li>
 
-                                    <li>
-                                        <a className='list_action' href="#">
-                                            Bit Royale Whitepaper
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-md-4">
-                                <h3 className="footer_title">
-                                    INFO
-                                </h3>
+                            <li>
+                                <a className='list_action' href="#">
+                                    Bit Royale Whitepaper
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-6 col-lg-2 ps-5 order-4 order-lg-3">
+                        <h3 className="footer_title">
+                            INFO
+                        </h3>
 
-                                <ul className="list-unstyled">
-                                    <li>
-                                        <a className='list_action' href="#">
-                                            GAMEPLAY
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className='list_action' href="#">
-                                            LAUNCHPAD
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className='list_action' href="#">
-                                            NFTs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className='list_action' href="#">
-                                            TOKENOMICS
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className='list_action' href="#">
-                                            ROADMAP
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-md-4">
-                                <h3 className="footer_title">
-                                    JOIN OUR COMMUNITY
-                                </h3>
+                        <ul className="list-unstyled">
+                            <li>
+                                <a className='list_action' href="#">
+                                    GAMEPLAY
+                                </a>
+                            </li>
+                            <li>
+                                <a className='list_action' href="#">
+                                    LAUNCHPAD
+                                </a>
+                            </li>
+                            <li>
+                                <a className='list_action' href="#">
+                                    NFTs
+                                </a>
+                            </li>
+                            <li>
+                                <a className='list_action' href="#">
+                                    TOKENOMICS
+                                </a>
+                            </li>
+                            <li>
+                                <a className='list_action' href="#">
+                                    ROADMAP
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-6 col-lg-3 order-2 order-lg-4">
+                        <h3 className="footer_title text-end d-none d-lg-block">
+                            JOIN OUR COMMUNITY
+                        </h3>
+                        <SocialAction></SocialAction>
 
-                                <SocialAction></SocialAction>
-
-                                <div className="btn_action text-end">
-                                    <a href="#" className='d-block mb-3'>
-                                        <img src={require('../../Static/img/footer_google_play.png')} alt="img" />
-                                    </a>
-                                    <a href="#">
-                                        <img src={require('../../Static/img/footer_google_play.png')} alt="img" />
-                                    </a>
-                                </div>
-                            </div>
+                        <h3 className="footer_title text-end d-lg-none mt-3">
+                            JOIN OUR COMMUNITY
+                        </h3>
+                        <div className="btn_action text-end d-none d-lg-block">
+                            <a href="#" className='d-block mb-3'>
+                                <img src={require('../../Static/img/footer_google_play.png')} alt="img" />
+                            </a>
+                            <a href="#">
+                                <img src={require('../../Static/img/footer_google_play.png')} alt="img" />
+                            </a>
                         </div>
                     </div>
+
+
+
+                </div>
+
+                <div className="row">
+                    <div className="col-12">
+                        <div className="mt-3 text-end d-flex justify-content-center d-lg-none">
+                            <a href="#" className='d-block mb-3 me-4'>
+                                <img src={require('../../Static/img/footer_google_play.png')} alt="img" />
+                            </a>
+                            <a href="#">
+                                <img src={require('../../Static/img/footer_google_play.png')} alt="img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="copyright_wrapper py-4 pt-5 mt-4 d-lg-none">
+                <div className="section_wrapper">
+                    <p>© 2022 bit comp. All right reserved.</p>
                 </div>
             </div>
         </footer>

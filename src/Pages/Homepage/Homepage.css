@@ -25,7 +25,7 @@
 
 @media (max-width: 991px) {
   #Homepage #AboutSection .about_game_desc {
-    margin-top: 35rem;
+    margin-top: 10rem;
     height: 38rem;
   }
 }
@@ -45,6 +45,14 @@
     margin-top: -5rem;
     height: 558px;
     width: auto !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 400px) {
+  #Homepage #GameplaySection .slide_img {
+    width: 100% !important;
   }
 }
 
@@ -189,7 +197,8 @@
 }
 
 #Homepage #HowToEarn {
-  margin-top: 700px;
+  margin-top: 800px;
+  margin-bottom: 50px;
 }
 
 #Homepage #HowToEarn .circle_header {
@@ -212,6 +221,17 @@
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  #Homepage #HowToEarn .circle_header {
+    width: 215px;
+    height: 215px;
+    margin-bottom: 2rem;
+  }
+  #Homepage #HowToEarn .circle_header h3 {
+    font-size: 2.7rem;
+  }
+}
+
 #Homepage #TokenomicsSection .section_list_box {
   height: 813px;
   background: url("../../Static/img/token_frame.png") center/100% 100% no-repeat;
@@ -227,6 +247,12 @@
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  #Homepage #TokenomicsSection .section_list_box {
+    background: #55dfff;
+  }
+}
+
 #Homepage #TokenomicsSection .section_list_box .token_list {
   position: relative;
   z-index: 10;
@@ -238,6 +264,16 @@
   margin-bottom: 2.6rem;
 }
 
+@media (max-width: 767px) {
+  #Homepage #TokenomicsSection .section_list_box .token_list .token_circle {
+    margin-bottom: 1.5rem;
+  }
+  #Homepage #TokenomicsSection .section_list_box .token_list .token_circle svg {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 #Homepage #TokenomicsSection .section_list_box .token_list .token_circle .token_name {
   position: absolute;
   top: 50%;
@@ -245,6 +281,22 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  #Homepage #TokenomicsSection .section_list_box .token_list .token_circle .token_name {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #Homepage #TokenomicsSection .section_list_box .token_list .token_description h4 {
+    font-size: 2.7rem !important;
+  }
+}
+
+#Homepage #Roadmap {
+  margin-top: 50px !important;
 }
 
 .section_img_outside {

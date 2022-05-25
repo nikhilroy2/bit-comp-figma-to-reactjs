@@ -30,7 +30,7 @@ function HowToEarn(props) {
                     <div className="row g-4 g-md-5">
                         {card_object.map(v => {
                             return (
-                                <div className="col-md-6 col-lg-4" key={v.id}>
+                                <div className="col-md-6 col-xl-4" key={v.id}>
                                     <div className="col_wrapper">
                                         <div className="circle_header">
                                             <h3 className='text_f1'>{v.title}</h3>

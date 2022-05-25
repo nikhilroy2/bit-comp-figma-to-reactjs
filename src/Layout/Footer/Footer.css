@@ -6,6 +6,7 @@ footer .text_strong {
   font-size: 2.3rem;
   font-weight: 700 !important;
   color: #08003d;
+  font-style: normal;
 }
 
 footer .footer_title {
@@ -30,5 +31,23 @@ footer .social_action_list a:not(:last-child) {
 
 footer .btn_action {
   margin-top: 6.3rem;
+}
+
+footer .copyright_text {
+  font-size: 1.4rem;
+  color: #08003d;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+footer .copyright_wrapper {
+  border-top: 1px solid #000000;
+  font-size: 1.4rem;
+  color: #08003d;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
 }
 /*# sourceMappingURL=Footer.css.map */

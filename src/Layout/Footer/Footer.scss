@@ -4,6 +4,7 @@ footer {
     font-size: 2.3rem;
     font-weight: 700 !important;
     color: #08003d;
+    font-style: normal;
   }
   .footer_title {
     font-weight: 700;
@@ -24,7 +25,25 @@ footer {
       margin-right: 2.4rem;
     }
   }
-  .btn_action{
-      margin-top: 6.3rem;
+  .btn_action {
+    margin-top: 6.3rem;
+  }
+
+  .copyright_text {
+    font-size: 1.4rem;
+    color: #08003d;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 30px;
+  }
+  .copyright_wrapper {
+    border-top: 1px solid #000000;
+    font-size: 1.4rem;
+    color: ##08003D;
+    font-family: "Barlow";
+
+    font-style: normal;
+    font-weight: 500;
   }
 }

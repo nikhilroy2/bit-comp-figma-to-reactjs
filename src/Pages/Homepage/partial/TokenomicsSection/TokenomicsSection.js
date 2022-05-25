@@ -237,12 +237,12 @@ function TokenomicsSection(props) {
                 </div>
 
                 <div className="section_body">
-                    <div className="row justify-content-center">
-                        <div className="col-10">
+                    <div className="row justify-content-center mx-n5 mx-md-0">
+                        <div className="col-12 col-md-10">
                             <div className="section_list_box">
                                 <ul className="list-unstyled token_list row g-4 p-5">
                                     {token_list_object.map(v => (
-                                        <li key={v.id} className="col-4">
+                                        <li key={v.id} className="col-6 col-md-4">
                                             <div className="token_circle">
                                                 {v.icon}
                                                 <h3 className="token_name">

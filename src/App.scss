@@ -16,12 +16,20 @@ html {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   background: url("./Static/img/background.png") center top no-repeat;
+  @media (max-width: 1199px) {
+    background-size: cover;
+  }
+  @media (max-width: 767px) {
+    //mobile_bg.png
+    background: url("./Static/img/mobile_bg.png") center top / 100% 100% no-repeat;
+  }
 }
 main {
 }
