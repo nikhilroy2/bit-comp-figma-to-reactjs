@@ -13,38 +13,93 @@
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  #Homepage #AboutSection .project_desk_wrapper {
+    height: 80rem;
+  }
+}
+
 #Homepage #AboutSection .about_game_desc {
-  margin-top: 20rem;
+  margin-top: 35rem;
+}
+
+@media (max-width: 991px) {
+  #Homepage #AboutSection .about_game_desc {
+    margin-top: 35rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #Homepage #GameplaySection {
+    margin-top: -10rem !important;
+  }
+}
+
+#Homepage #GameplaySection .slide_img {
+  pointer-events: none;
+}
+
+@media (max-width: 991px) {
+  #Homepage #GameplaySection .slide_img {
+    margin-top: -5rem;
+  }
 }
 
 #Homepage #GameplaySection .section_content {
   margin-top: 10rem;
 }
 
+@media (max-width: 991px) {
+  #Homepage #GameplaySection .section_content {
+    margin-top: -5rem !important;
+  }
+  #Homepage #GameplaySection .section_content * {
+    color: #fff !important;
+  }
+}
+
 #Homepage #GameplaySection .swiper-button-prev {
   left: calc(100% - 430px);
-  top: 90%;
+  top: 85%;
   width: 65px;
   height: 82px;
 }
 
+@media (max-width: 991px) {
+  #Homepage #GameplaySection .swiper-button-prev {
+    width: 38px;
+    height: 48px;
+    left: calc(50% - 150px);
+    top: 98%;
+  }
+}
+
 #Homepage #GameplaySection .swiper-button-prev:after {
   content: "";
-  background: url("../../Static/img/arow_light.png");
+  background: url("../../Static/img/arow_light.png") center/100% 100% no-repeat;
   width: 100%;
   height: 100%;
 }
 
 #Homepage #GameplaySection .swiper-button-next {
   left: calc(100% - 100px);
-  top: 90%;
+  top: 85%;
   width: 65px;
   height: 82px;
 }
 
+@media (max-width: 991px) {
+  #Homepage #GameplaySection .swiper-button-next {
+    width: 38px;
+    height: 48px;
+    left: calc(50% + 80px);
+    top: 98%;
+  }
+}
+
 #Homepage #GameplaySection .swiper-button-next:after {
   content: "";
-  background: url("../../Static/img/arow_right.png");
+  background: url("../../Static/img/arow_right.png") center/100% 100% no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -53,10 +108,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 220px;
+  width: 200px;
   left: calc(100% - 335px);
   background: #0f006d;
-  bottom: 53px !important;
+  bottom: 12% !important;
+}
+
+@media (max-width: 991px) {
+  #Homepage #GameplaySection .swiper-pagination-bullets {
+    display: none;
+  }
 }
 
 #Homepage #GameplaySection .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -150,6 +211,16 @@
   -o-object-position: right center;
      object-position: right center;
   pointer-events: none;
+}
+
+@media (max-width: 991px) {
+  .section_img_outside {
+    height: 40rem;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    bottom: 10%;
+  }
 }
 
 .section_img_outside.img_launchpad {

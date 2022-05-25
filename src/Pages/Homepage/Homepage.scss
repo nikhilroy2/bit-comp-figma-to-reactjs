@@ -1,8 +1,7 @@
 #Homepage {
   #Section1 {
     min-height: 1224px;
-    background: url("../../Static/img/ArtWeb1.png") 40% 0px / cover
-      no-repeat;
+    background: url("../../Static/img/ArtWeb1.png") 40% 0px / cover no-repeat;
     @media (min-width: 992px) {
       background: url("../../Static/img/ArtWeb1.png") center 0px / contain
         no-repeat;
@@ -13,24 +12,55 @@
 
   #AboutSection {
     position: relative;
+    .project_desk_wrapper {
+      @media (max-width: 1200px) {
+        height: 80rem;
+      }
+    }
     .about_game_desc {
-      margin-top: 20rem;
+      margin-top: 35rem;
+      @media (max-width: 991px) {
+        margin-top: 35rem;
+      }
     }
   }
   #GameplaySection {
+    @media (max-width: 991px) {
+      margin-top: -10rem !important;
+    }
+    .slide_img {
+      pointer-events: none;
+      @media (max-width: 991px) {
+        margin-top: -5rem;
+      }
+    }
+
     .section_content {
       margin-top: 10rem;
+      @media (max-width: 991px) {
+        margin-top: -5rem !important;
+        * {
+          color: #fff !important;
+        }
+      }
     }
     // prev button
     .swiper-button-prev {
       left: calc(100% - 430px);
-      top: 90%;
+      top: 85%;
       width: 65px;
       height: 82px;
+      @media (max-width: 991px) {
+        width: 38px;
+        height: 48px;
+        left: calc(50% - 150px);
+        top: 98%;
+      }
     }
     .swiper-button-prev:after {
       content: "";
-      background: url("../../Static/img/arow_light.png");
+      background: url("../../Static/img/arow_light.png") center/100% 100%
+        no-repeat;
       width: 100%;
       height: 100%;
     }
@@ -38,13 +68,20 @@
     // next button
     .swiper-button-next {
       left: calc(100% - 100px);
-      top: 90%;
+      top: 85%;
       width: 65px;
       height: 82px;
+      @media (max-width: 991px) {
+        width: 38px;
+        height: 48px;
+        left: calc(50% + 80px);
+        top: 98%;
+      }
     }
     .swiper-button-next:after {
       content: "";
-      background: url("../../Static/img/arow_right.png");
+      background: url("../../Static/img/arow_right.png") center/100% 100%
+        no-repeat;
       width: 100%;
       height: 100%;
     }
@@ -52,10 +89,13 @@
     // swiper-pagination-bullets
     .swiper-pagination-bullets {
       display: flex;
-      width: 220px;
+      width: 200px;
       left: calc(100% - 335px);
       background: #0f006d;
-      bottom: 53px !important;
+      bottom: 12% !important;
+      @media (max-width: 991px){
+        display: none;
+      }
       .swiper-pagination-bullet {
         flex-grow: 1;
         border-radius: 0px;
@@ -128,6 +168,12 @@
   object-fit: contain;
   object-position: right center;
   pointer-events: none;
+  @media (max-width: 991px) {
+    height: 40rem;
+    width: 100%;
+    object-fit: contain;
+    bottom: 10%;
+  }
   &.img_launchpad {
     height: 80rem;
     bottom: -60%;
