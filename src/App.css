@@ -33,19 +33,23 @@ button {
 }
 
 .text_4a {
-  color: #13004A;
+  color: #13004a;
 }
 
 .text_69 {
-  color: #1B0069;
+  color: #1b0069;
 }
 
 .text_7a {
-  color: #20007A;
+  color: #20007a;
 }
 
 .text_f1 {
-  color: #5DCFF1;
+  color: #5dcff1;
+}
+
+.text_6d {
+  color: #0f006d;
 }
 
 .section_wrapper {
@@ -54,8 +58,26 @@ button {
   margin-right: auto;
 }
 
+@media (max-width: 1250px) {
+  .section_wrapper {
+    padding: 0px 3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .section_wrapper {
+    padding: 0px 1rem;
+  }
+}
+
 #Section1 {
   padding-top: 135px;
+}
+
+@media (max-width: 991px) {
+  #Section1 {
+    padding-top: 100px;
+  }
 }
 
 .family_barlow {
@@ -67,7 +89,13 @@ button {
 }
 
 .font_36 {
-  font-size: 3.6rem;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 992px) {
+  .font_36 {
+    font-size: 3.6rem;
+  }
 }
 
 .btn_frame {
@@ -75,6 +103,12 @@ button {
   padding: 6px 25px;
   font-weight: 600;
   display: inline-block;
+}
+
+@media (max-width: 400px) {
+  .btn_frame {
+    padding: 4px 18px;
+  }
 }
 
 .btn_frame.section_frame_btn {

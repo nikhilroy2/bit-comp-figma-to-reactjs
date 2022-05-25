@@ -1,42 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import Countdown from "react-countdown";
-// Random component
-const Completionist = () => <span>You are good to go!</span>;
-
-// Renderer callback with condition
-const renderer = ({ days, hours, minutes, seconds, completed }) => {
-  if (completed) {
-    // Render a completed state
-    return <Completionist />;
-  } else {
-    // Render a countdown
-    return (
-      <div className="counter d-flex mt-2 text-center">
-        <div className="counter_item">
-          <span className="time">{days}</span>
-          <br />
-          Days
-        </div>
-        <div className="counter_item">
-          <span className="time">{hours}</span>
-          <br />
-          Hours
-        </div>
-        <div className="counter_item">
-          <span className="time">{minutes}</span>
-          <br />
-          Minutes
-        </div>
-        <div className="counter_item">
-          <span className="time">{seconds}</span>
-          <br />
-          Seconds
-        </div>
-      </div>
-    );
-  }
-};
+import { CountDownStart } from "../../Components/HeaderCountDown/HeaderCountDown";
 function Header(props) {
   // toggleBtn action
 
@@ -61,10 +25,10 @@ function Header(props) {
 
   return (
     <header className={isHeaderActive ? 'active_header' : ''}>
-      <div className="section_wrapper">
-        <nav className="d-flex align-items-center navbar justify-content-between">
+      <div className="section_wrapper h-100">
+        <nav className="d-flex align-items-center h-100 navbar shadow-0 justify-content-between">
           <div className="nav_item">
-            <a href="#" className="logo">
+            <a href="#" className="logo ms-n5">
               <img
                 src={require("../../Static/img/BitCompBlue.png")}
                 alt="logo"
@@ -72,7 +36,7 @@ function Header(props) {
             </a>
           </div>
 
-          <div className="nav_item nav_sale_content">
+          <div className="nav_item nav_sale_content ps-5 ms-5 d-none d-lg-block">
             <div className="text-center">
               <strong>Private Sale Start In</strong>
               <div className="sale_start_wrapper">
@@ -81,7 +45,7 @@ function Header(props) {
             </div>
           </div>
           <div className="nav_item nav_action d-flex align-items-center">
-            <button className="btn_frame family_barlow font_36">
+            <button className="btn_frame family_barlow font_36 text_6d">
               BUY TOKEN
             </button>
 
@@ -92,7 +56,7 @@ function Header(props) {
                 onClick={() => setToggleBtn(!toggleBtn)}
               >
                 <img
-                  style={{ width: "26px", height: "26px" }}
+                  style={{ width: "36px", height: "26px", objectFit: 'contain' }}
                   src={
                     toggleMemo
                       ? require("../../Static/img/menu_close.png")
@@ -113,20 +77,7 @@ function Header(props) {
 
 export default Header;
 
-const CountDownStart = () => {
 
-  // first try useMemo but it's not working then try useEffect then it's worked.
-  const CountdownWrapper = () => <Countdown date={Date.now() + 1036800000} renderer={renderer} />
-  const MemoCountDown = React.memo(CountdownWrapper)
-  //console.log(MemoCountDown)
-  const [countReady, setCountReady] = useState('')
-  React.useEffect(() => {
-    setCountReady(<MemoCountDown></MemoCountDown>)
-  }, [])
-  return (
-    <>{countReady}</>
-  )
-}
 const Menu = () => {
   const menu_object = [
     {
@@ -242,8 +193,8 @@ const Menu = () => {
 
   return (
     <menu id="header_menu" className="m-0 p-0 ">
-      <div className="section_wrapper d-flex align-items-center justify-content-between w-100">
-        <ul className="menu_list list-unstyled d-flex p-0">
+      <div className="section_wrapper d-xxl-flex align-items-center justify-content-between w-100 text-center p-5 p-xxl-0">
+        <ul className="menu_list list-unstyled d-xxl-flex p-0">
           {menu_object.map((v) => {
             return (
               <li key={v.id}>
@@ -253,7 +204,7 @@ const Menu = () => {
           })}
         </ul>
 
-        <ul className="list-unstyled menu_social_list d-flex p-0">
+        <ul className="list-unstyled menu_social_list d-flex justify-content-center justify-content-xxl-stretch p-0">
           {menu_social_object.map((v) => {
             return (
               <li

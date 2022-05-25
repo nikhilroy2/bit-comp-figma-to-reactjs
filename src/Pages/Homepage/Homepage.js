@@ -8,6 +8,8 @@ import NFTS from "./partial/NFTS/NFTS";
 import HowToEarn from "./partial/HowToEarn/HowToEarn";
 import TokenomicsSection from "./partial/TokenomicsSection/TokenomicsSection";
 import Roadmap from "./partial/Roadmap/Roadmap";
+
+import { CountDownStart } from "../../Components/HeaderCountDown/HeaderCountDown";
 function Homepage(props) {
   return (
     <div id="Homepage">
@@ -31,7 +33,19 @@ const Section1 = () => {
     <div id="Section1">
       <div className="section_wrapper">
         <div className="row">
+          <div className="col-12 d-lg-none">
+            <div className="nav_sale_content">
+              <div className="text-center">
+                <strong className="text-white">Private Sale Start In</strong>
+                <div className="sale_start_wrapper text-center d-flex justify-content-center">
+                  <CountDownStart></CountDownStart>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="col-md-7">
+
+
             <h1 className="mb-3 mb-md-5">BIT COMP</h1>
             <h4 className="mb-3 mb-md-5">
               BitComp unites investors, players and developers based on
