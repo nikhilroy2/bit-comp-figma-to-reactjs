@@ -28,10 +28,13 @@ body {
   }
   @media (max-width: 767px) {
     //mobile_bg.png
-    background: url("./Static/img/mobile_bg.png") center top / 100% 100% no-repeat;
+    background: url("./Static/img/mobile_bg.png") center top / 100% 100%
+      no-repeat;
   }
 }
 main {
+  margin: 0;
+  padding: 0;
 }
 button {
   border: 0;
@@ -39,7 +42,7 @@ button {
   background: transparent;
 }
 .text_5d {
-  color: #55dfff;
+  color: #55dfff !important;
 }
 .text_4a {
   color: #13004a;
@@ -156,4 +159,8 @@ h5 {
   @media (max-width: 991px) {
     font-size: 1.8rem;
   }
+}
+
+.font-weight-bold {
+  font-weight: 700;
 }

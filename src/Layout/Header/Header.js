@@ -22,53 +22,93 @@ function Header(props) {
     }
   }
 
+  console.log(window.location.pathname)
+  const [nftPathName, setNftPathName] = useState(false);
+
+  React.useEffect(() => {
+    setNftPathName(window.location.pathname);
+  }, [])
+
 
   return (
     <header className={isHeaderActive ? 'active_header' : ''}>
-      <div className="section_wrapper h-100">
-        <nav className="d-flex align-items-center h-100 navbar shadow-0 justify-content-between">
-          <div className="nav_item">
-            <a href="#" className="logo ms-n5">
-              <img
-                src={require("../../Static/img/BitCompBlue.png")}
-                alt="logo"
-              />
-            </a>
-          </div>
+      {!(nftPathName === '/buy_nft_investory') ?
+        <div className="section_wrapper h-100">
+          <nav className="d-flex align-items-center h-100 navbar shadow-0 justify-content-between">
+            <div className="nav_item">
+              <a href="#" className="logo ms-n5">
+                <img
+                  src={require("../../Static/img/BitCompBlue.png")}
+                  alt="logo"
+                />
+              </a>
+            </div>
 
-          <div className="nav_item nav_sale_content ps-5 ms-5 d-none d-lg-block">
-            <div className="text-center">
-              <strong>Private Sale Start In</strong>
-              <div className="sale_start_wrapper">
-                <CountDownStart></CountDownStart>
+            <div className="nav_item nav_sale_content ps-5 ms-5 d-none d-lg-block">
+              <div className="text-center">
+                <strong>Private Sale Start In</strong>
+                <div className="sale_start_wrapper">
+                  <CountDownStart></CountDownStart>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="nav_item nav_action d-flex align-items-center">
-            <button className="btn_frame family_barlow font_36 text_6d">
-              BUY TOKEN
-            </button>
+            <div className="nav_item nav_action d-flex align-items-center">
+              <button className="btn_frame family_barlow font_36 text_6d">
+                BUY TOKEN
+              </button>
 
-            <div className="toggle_btn_wrapper">
-              <button
-                type="button"
-                className="btn_toggle"
-                onClick={() => setToggleBtn(!toggleBtn)}
-              >
+              <div className="toggle_btn_wrapper">
+                <button
+                  type="button"
+                  className="btn_toggle"
+                  onClick={() => setToggleBtn(!toggleBtn)}
+                >
+                  <img
+                    style={{ width: "36px", height: "26px", objectFit: 'contain' }}
+                    src={
+                      toggleMemo
+                        ? require("../../Static/img/menu_close.png")
+                        : require("../../Static/img/menu_bar.png")
+                    }
+                    alt="img"
+                  />
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div> : <div className="section_wrapper h-100">
+          <nav className="d-flex align-items-center h-100 navbar shadow-0 justify-content-between">
+            <div className="nav_item">
+              <a href="#" className="logo ms-n5">
                 <img
-                  style={{ width: "36px", height: "26px", objectFit: 'contain' }}
-                  src={
-                    toggleMemo
-                      ? require("../../Static/img/menu_close.png")
-                      : require("../../Static/img/menu_bar.png")
-                  }
-                  alt="img"
+                  src={require("../../Static/img/bit_royale.png")}
+                  alt="logo"
                 />
+              </a>
+            </div>
+
+            <div className="nav_item nav_action_link_wrapper">
+              <a className="font_36 text_5d text-uppercase me-5" style={{ fontWeight: '700' }} href="#">
+                BUY hero
+              </a>
+
+              <a className="font_36 text_5d text-uppercase" href="#" style={{ fontWeight: '700' }}>
+                inventory
+              </a>
+            </div>
+
+            <div className="nav_item nav_action d-flex align-items-center">
+              <div className="user_token_wrapper d-flex align-items-center">
+                <img src={require('../../Static/img/bcomp.png')} alt="img" />
+                1 BCOMP <br /> 0xAc...807h
+              </div>
+              <button className="btn_frame family_barlow font_36 text_6d">
+                BUY TOKEN
               </button>
             </div>
-          </div>
-        </nav>
-      </div>
+          </nav>
+        </div>
+      }
       {toggleMemo ? <Menu></Menu> : ""}
     </header>
   );

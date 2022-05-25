@@ -32,7 +32,7 @@ const Section1 = () => {
   return (
     <div id="Section1">
       <div className="section_wrapper">
-        <div className="row justify-content-center justify-content-lg-stretch">
+        <div className="row justify-content-center justify-content-lg-start">
           <div className="col-12 d-lg-none">
             <div className="nav_sale_content">
               <div className="text-center">
@@ -43,9 +43,7 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-12">
-
-
+          <div className="col-lg-7">
             <h1 className="mb-3 mb-md-5 text-center text-lg-start">BIT COMP</h1>
             <h4 className="mb-3 mb-md-5 text-center text-lg-start">
               BitComp unites investors, players and developers based on

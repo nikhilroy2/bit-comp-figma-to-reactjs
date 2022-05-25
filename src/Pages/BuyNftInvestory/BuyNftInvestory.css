@@ -1,6 +1,63 @@
 #BuyNftInvestory {
-  background: url("../../Static/img/investory_bg.png");
+  background: url("../../Static/img/investory_bg.png") center top/cover no-repeat;
   min-height: 100vh;
   width: 100%;
+  border: 0;
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+#NftPreSale {
+  padding: 3rem;
+  padding-top: 20rem;
+}
+
+@media (max-width: 767px) {
+  #NftPreSale .presale_img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 600px) {
+  #NftPreSale .presale_img {
+    width: 75%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: auto;
+    height: 180px !important;
+  }
+}
+
+#NftPreSale .presale_wrapper {
+  max-width: 840px;
+  max-height: 615px;
+  background: #55dfff;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 20px 53px #13004a;
+          box-shadow: 0px 20px 53px #13004a;
+  border-radius: 7px;
+}
+
+#NftPreSale .counter_btn {
+  width: 35px;
+  height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)), #ffffff;
+  background: linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(0deg, #ffffff, #ffffff), linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=BuyNftInvestory.css.map */

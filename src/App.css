@@ -35,6 +35,11 @@ body {
   }
 }
 
+main {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   border: 0;
   outline: 0;
@@ -42,7 +47,7 @@ button {
 }
 
 .text_5d {
-  color: #55dfff;
+  color: #55dfff !important;
 }
 
 .text_4a {
@@ -193,5 +198,9 @@ h5 {
   .section_pera {
     font-size: 1.8rem;
   }
+}
+
+.font-weight-bold {
+  font-weight: 700;
 }
 /*# sourceMappingURL=App.css.map */
